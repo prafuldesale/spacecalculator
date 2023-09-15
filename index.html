@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+</head>
+<body>
+    <div class="container">
+
+        <h2>Minimum Clearance Required for Cooling Tower - Calculation Tool</h2><br>
+    <table>
+            <div class="Book1">
+                <label>Air Flowrate in m3/hr :</label>
+                <input id="bookOne" type="number" name="" value="486000" placeholder="m3/hr">
+            
+            <div class="Book2">
+                <label>Air Inlet Length in mm :</label>
+                <input id="bookTwo" type="number" name="" value="4096" placeholder="mm">
+            </div> 
+            <div class="Book3">
+                <label>Air Inlet Height in mm :</label>
+                <input id="bookThree"type="number" name="" value="4462" placeholder="mm">
+            </div>
+            <div class="Book4">
+                <label>Air Inlet Clearance in mm :</label>
+                <input id="bookFour"type="number" name="" value="1700" placeholder="mm">
+            </div>
+            <div class="Book5">
+                <label>Number of air Inlets :</label>
+                <select id="bookFive" name="">
+                    <option value="0.5">Two (Cross flow)</option>
+                    <option value="1">One (Single inlet tower)</option>
+                    <option value="0.25">Four (Counter flow)</option>
+                  </select>
+            </div> 
+        </table>
+            <button class="button" onclick="fun()">Calculate</button>
+        <div>
+            <table> 
+<tr>
+    <td> Design Wind Speed:</td>
+    <td id="output1"></td>
+    <td>m/s</td>
+</tr>
+<tr>
+    <td>Wind speed at Clearance:</td>
+    <td id="output2"></td>
+    <td>m/s</td>
+</tr>
+</table>
+<table>
+<tr>
+    <td>Summary:</td>
+    <td id="summary"></td>
+</tr>
+</table>
+        </div>
+    </div>
+   <script type=text/javascript src="code.js"></script>
+</body>
+</html>
